@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <main class="container">
+      <h1>Calculator</h1>
+      <div class="row">
+        <input id="a" type="number" placeholder="Angka A" />
+        <select id="op">
+          <option value="add">+</option>
+          <option value="sub">-</option>
+          <option value="mul">×</option>
+          <option value="div">÷</option>
+          <option value="pow">^</option>
+          <option value="mod">mod</option>
+        </select>
+        <input id="b" type="number" placeholder="Angka B" />
+      </div>
+      <div class="row">
+        <button id="calc">Hitung</button>
+        <button id="clear">Bersihkan</button>
+      </div>
+      <div id="result" class="result">Hasil: —</div>
+      <footer class="note">Menggunakan API: <code>/api/calculate</code></footer>
+    </main>
+    <script src="/app.js"></script>
+  </body>
+</html>
